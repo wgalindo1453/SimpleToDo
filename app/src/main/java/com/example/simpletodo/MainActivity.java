@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
     EditText etTodo;
     RecyclerView rvItems;
 
-
     List<String> items;
     ItemsAdapter adapter;
 
@@ -129,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void loadItems() {
         try {
-            items = new ArrayList<>(FileUtils.readLines(getDataFile(), String.valueOf(Charset.defaultCharset())));
+            items = new ArrayList<>(FileUtils.readLines(getDataFile(), Charset.defaultCharset()));
         } catch (IOException e) {
             Log.e("MainActivity", "Error reading items", e);
             items = new ArrayList<>();
