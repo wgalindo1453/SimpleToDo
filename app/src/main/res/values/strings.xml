@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SimpleToDo</string>
+
+    <string-array name="priority">
+        <item>High</item>
+        <item>Med</item>
+        <item>Low</item>
+    </string-array>
 </resources>
+

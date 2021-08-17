@@ -1,42 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/notepad"
+    android:textAlignment="center"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="58dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/spinner1"
+        android:layout_alignTop="@+id/spinner1"
+        android:layout_alignEnd="@+id/spinner1"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="0dp"
-        android:text="Add" />
+        android:fontFamily="@font/caveat_brush"
+        android:text="Priority"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
 
     <EditText
         android:id="@+id/etTodo"
-        android:layout_width="match_parent"
+        android:layout_width="146dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/btnAdd"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/button"
         android:ems="10"
-        android:hint="Write your todo here" />
+        android:fontFamily="@font/caveat_brush"
+        android:hint="Task?"
+        android:shadowColor="#0C0C0C"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="#090909"
+        android:textColorLink="@color/black"
+        android:theme="@style/Theme.SimpleToDo" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvItems"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btnAdd"
+        android:layout_height="508dp"
+        android:layout_above="@+id/etTodo"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00000000"
+        android:textAlignment="center"
+        android:theme="@style/Theme.SimpleToDo" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="54dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/rvItems"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="0dp"
-        android:layout_marginBottom="11dp" />
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/caveat_brush"
+        android:text="Add"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rvItems"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/spinner1"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/caveat_brush"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rvItems"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/caveat_brush"
+        android:text="When?"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rvItems"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/btnAdd"
+        android:fontFamily="@font/caveat_brush"
+        android:textColor="@color/black"
+        android:theme="@style/Theme.SimpleToDo" />
 
 
 </RelativeLayout>
