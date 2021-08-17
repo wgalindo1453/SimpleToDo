@@ -2,9 +2,9 @@
 
 **Simple To do** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
 
-Submitted by: **William**
+Submitted by: **William Galindo**
 
-Time spent: **4** hours spent in total
+Time spent: **5** hours spent in total
 
 ## User Stories
 
@@ -20,13 +20,30 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [X] Persist the todo items into SQLite instead of text file
+* [X] Added support for selecting the priority of each todo item( and display them to user )
+* [X] Tweak the style improving the UI, played with colors, images or backgrounds
+* [X] Add support for selecting due dates for todo items(and display them to user)
+* [ ] Add filter to sort items based on priority, date.
+* [ ] Enable user to add todo scheduled task to their personal calendar.
 
-## Video Walkthrough
+## 1st Video Walkthrough with textFile storage
 
 Here's a walkthrough of implemented user stories:
 
 <img src='ToDoAppDemo1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+
+
+
+
+## 2nd Video Walkthrough with added features
+
+Here's a walkthrough of implemented user stories:
+
+<img src='SQLiteToDoAppDemo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
